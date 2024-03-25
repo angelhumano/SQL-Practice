@@ -8,7 +8,7 @@
 ## The SQL Murder Mystery
 
 Spoiler: If you want to try the exercise, do not read beyond this point and go to the original [source](https://mystery.knightlab.com/).
-The SQL Murder Mystery was created by Joon Park and Cathy He while they were Knight Lab fellows. See the GitHub repository for more information.
+The SQL Murder Mystery was created by Joon Park and Cathy He while they were Knight Lab fellows. See the [GitHub repository](https://github.com/NUKnightLab/sql-mysteries) for more information.
 
 
 <details>
