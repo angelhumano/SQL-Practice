@@ -1,0 +1,3 @@
+# Identify sql files
+
+*.sql linguist-language=sql
