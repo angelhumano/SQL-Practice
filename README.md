@@ -34,7 +34,7 @@ AND date = 20180115
 AND type ="murder";         
 ```
 
-[report output](SQL_murder_images/report_output.png)
+![report output](SQL_murder_images/report_output.png)
 
 
 #### Gather information from witnesses
@@ -48,7 +48,7 @@ ORDER BY address_number DESC
 LIMIT 1;
 ```
 
-[witness1 output](SQL_murder_images/witness1_output.png)
+![witness1 output](SQL_murder_images/witness1_output.png)
 
 
    ```sql
@@ -59,7 +59,7 @@ WHERE name  like "A%"
 AND address_street_name = "Franklin Ave";
 ```
 
-[witness2 output](SQL_murder_images/witness2_output.png)
+![witness2 output](SQL_murder_images/witness2_output.png)
 
 
 #### Read the police report of each witness
@@ -72,7 +72,7 @@ ON p.id = i.person_id
 WHERE p.name IN ("Morty Schapiro", "Annabel Miller")
 ```
 
-[witness transcript output](SQL_murder_images/witness_transcript_output.png)
+![witness transcript output](SQL_murder_images/witness_transcript_output.png)
 
 
 **New clues**
@@ -99,7 +99,7 @@ WHERE c.check_in_date = 20180109 AND
 c.membership_id LIKE '48Z%'
 ```
 
-[gym lead output](SQL_murder_images/gym_lead_output.png)
+![gym lead output](SQL_murder_images/gym_lead_output.png)
 
 
 #### Car lead
@@ -115,7 +115,7 @@ WHERE p.name IN ("Joe Germuska", "Jeremy Bowers")
 AND plate_number LIKE '%H42W%';
 ```
 
-[car lead output](SQL_murder_images/car_lead_output.png)
+![car lead output](SQL_murder_images/car_lead_output.png)
 
 
 #### Who paid the killer?
@@ -131,7 +131,7 @@ ON p.id = i.person_id
 WHERE p.name = "Jeremy Bowers"
 ```
 
-[crime transcript output](SQL_murder_images/crime_transcript_output.png)
+![crime transcript output](SQL_murder_images/crime_transcript_output.png)
 
 
  ```sql
@@ -150,7 +150,7 @@ AND car_make = "Tesla"
 AND car_model = "Model S"
 ```
 
-[mastermind output](SQL_murder_images/mastermind_output.png)
+![mastermind output](SQL_murder_images/mastermind_output.png)
 
 
 </details>
