@@ -4,11 +4,11 @@
 
 
 ## Table of Contents
-- [Introduction](#SQL)
+- [The SQL Murder Mystery](#practice1)
 - [Installation](#installation)
 
 
-## SQL
+## Practice 1: The SQL Murder Mystery
 This is where you introduce your project.
 
 ## Installation
