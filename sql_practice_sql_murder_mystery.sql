@@ -5,11 +5,13 @@ SELECT *
 FROM crime_scene_report
 WHERE city = "SQL City" 
 AND date = 20180115
-
+AND type ="murder";
+              
 
 --2. New information (2 witnesses). 
 
 -- One lives on  last house on "Northwestern Dr"
+SELECT *
 FROM person
 WHERE address_street_name = "Northwestern Dr"
 ORDER BY address_number DESC
@@ -31,13 +33,18 @@ ON p.id = i.person_id
 WHERE p.name IN ("Morty Schapiro", "Annabel Miller")
 
 /*
-She recognized the killer from her gym when working out last week on January 9th.
-Let us check who participated in that class.
 
 Morty Schapiro:
 - Killer had "Get Fit Now Gym" bag. 
 The membership number on the bag started with "48Z
-- Car with a plate that included "H42W"*/
+- Car with a plate that included "H42W"
+
+Annabel Miller:
+She recognized the killer from her gym when working out last week on January 9th.
+Let us check who participated in that class.
+
+*/
+
 
 --4. Gym lead
 
