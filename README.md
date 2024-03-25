@@ -6,25 +6,25 @@
 
 
 ## The SQL Murder Mystery
-
-Spoiler: If you want to try the exercise, do not read beyond this point and go to the original [source](https://mystery.knightlab.com/).
+ 
+**Spoiler:** If you want to try the exercise, do not read beyond this point; go to the [source](https://mystery.knightlab.com/).
 The SQL Murder Mystery was created by Joon Park and Cathy He while they were Knight Lab fellows. See the [GitHub repository](https://github.com/NUKnightLab/sql-mysteries) for more information.
 
 
 <details>
-  <summary>Click the arrow to see my thought process, SQL queries, and outputs</summary>
+  <summary>Click the arrow to see my thought process, SQL queries, and outputs.</summary>
 
    <br>
    
 #### Initial clues 
-The crime was a **​murder**​ that occurred sometime on ​**Jan.15, 2018**​ and that it took place in ​**SQL City**​.
+The crime was a **​murder**​ that occurred sometime on ​**Jan.15, 2018,**​ and that it took place in ​**SQL City**​.
    
 #### Databse schema
 
 
  ![database_schema](SQL_murder_images/database_schema.png)
 
-#### Read crime report 📝
+#### Read the crime report 📝
 
    ```sql
 SELECT *
@@ -115,12 +115,11 @@ WHERE p.name IN ("Joe Germuska", "Jeremy Bowers")
 AND plate_number LIKE '%H42W%';
 ```
 
- **Jeremy Bowers is the killer** 🎯 
-
 ![car lead output](SQL_murder_images/car_lead_output.png)
 
-
-#### Who paid the killer? 
+ **Jeremy Bowers is the killer** 🎯 
+ 
+#### Who paid the killer? 🧐 
  
  ```sql
 
@@ -152,6 +151,7 @@ AND car_make = "Tesla"
 AND car_model = "Model S"
 ```
 ![mastermind output](SQL_murder_images/mastermind_output.png)
+
 
 **Miranda Priestly is the mastermind** 
 
