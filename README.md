@@ -1,26 +1,15 @@
-# SQL-Practice
+# SQL Practice Exercises
 
-# My Project
+
+
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Introduction](#SQL)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Introduction
+
+## SQL
 This is where you introduce your project.
 
 ## Installation
 Instructions on how to install your project.
-
-## Usage
-Details on how to use your project.
-
-## Contributing
-Guidelines for contributing to your project.
-
-## License
-Information about the license for your project.
-
