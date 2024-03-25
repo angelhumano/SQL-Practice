@@ -2,13 +2,13 @@
 
 ## Table of Contents
 - [The SQL Murder Mystery](#the-sql-murder-mystery)
-- [Installation](#installation)
+- [Next Practice](#installation)
 
 
 ## The SQL Murder Mystery
 
 Spoiler: If you want to try the exercise, do not read beyond this point and go to the original [source](https://mystery.knightlab.com/).
-The SQL Murder Mystery was created by Joon Park and Cathy He while they were Knight Lab fellows. See the GitHub repository for more information.
+The SQL Murder Mystery was created by Joon Park and Cathy He while they were Knight Lab fellows. See the [GitHub repository](https://github.com/NUKnightLab/sql-mysteries) for more information.
 
 
 <details>
@@ -20,17 +20,21 @@ The SQL Murder Mystery was created by Joon Park and Cathy He while they were Kni
 The crime was a **​murder**​ that occurred sometime on ​**Jan.15, 2018**​ and that it took place in ​**SQL City**​.
    
 #### Databse schema
+
+
  ![database_schema](SQL_murder_images/database_schema.png)
 
 #### Read crime report
+
    ```sql
 SELECT *
 FROM crime_scene_report
 WHERE city = "SQL City" 
 AND date = 20180115
-AND type ="murder";
-              
+AND type ="murder";         
 ```
+
+![report output](SQL_murder_images/report_output.png)
 
 
 #### Gather information from witnesses
@@ -44,6 +48,8 @@ ORDER BY address_number DESC
 LIMIT 1;
 ```
 
+![witness1 output](SQL_murder_images/witness1_output.png)
+
 
    ```sql
 -- Secod witness, “Annabel” lives on “Franklin Ave”
@@ -52,6 +58,9 @@ FROM person
 WHERE name  like "A%"
 AND address_street_name = "Franklin Ave";
 ```
+
+![witness2 output](SQL_murder_images/witness2_output.png)
+
 
 #### Read the police report of each witness
 
@@ -63,6 +72,8 @@ ON p.id = i.person_id
 WHERE p.name IN ("Morty Schapiro", "Annabel Miller")
 ```
 
+![witness transcript output](SQL_murder_images/witness_transcript_output.png)
+
 
 **New clues**
 
@@ -71,8 +82,7 @@ WHERE p.name IN ("Morty Schapiro", "Annabel Miller")
 | Morty Schapiro  | Car with a plate that included "H42W"               |
 | Morty Schapiro   | Killer had "Get Fit Now Gym" bag                                                                 |
 | Morty Schapiro   | The membership number on the bag started with "48Z"                                               |
-| Annabel Miller    | She recognized the killer from her gym when working out last week on January 9th.                 |
-
+| Annabel Miller    | She recognized the killer from her gym when working out last week on January 9th|
 
 
 We have two leads: the gym and car leads
@@ -88,6 +98,10 @@ ON m.id = c.membership_id
 WHERE c.check_in_date = 20180109 AND
 c.membership_id LIKE '48Z%'
 ```
+
+![gym lead output](SQL_murder_images/gym_lead_output.png)
+
+
 #### Car lead
 
  ```sql
@@ -101,6 +115,9 @@ WHERE p.name IN ("Joe Germuska", "Jeremy Bowers")
 AND plate_number LIKE '%H42W%';
 ```
 
+![car lead output](SQL_murder_images/car_lead_output.png)
+
+
 #### Who paid the killer?
  
  ```sql
@@ -113,6 +130,9 @@ INNER JOIN interview AS i
 ON p.id = i.person_id
 WHERE p.name = "Jeremy Bowers"
 ```
+
+![crime transcript output](SQL_murder_images/crime_transcript_output.png)
+
 
  ```sql
 
@@ -130,12 +150,12 @@ AND car_make = "Tesla"
 AND car_model = "Model S"
 ```
 
-
-
-
-
+![mastermind output](SQL_murder_images/mastermind_output.png)
 
 </details>
+
+## Next practice 
+Coming soon.
 
 
 
