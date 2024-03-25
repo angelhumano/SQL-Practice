@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [The SQL Murder Mystery](#the-sql-murder-mystery)
-- [Installation](#installation)
+- [Next Practice](#installation)
 
 
 ## The SQL Murder Mystery
@@ -152,8 +152,10 @@ AND car_model = "Model S"
 
 ![mastermind output](SQL_murder_images/mastermind_output.png)
 
-
 </details>
+
+## Next practice 
+Coming soon.
 
 
 
