@@ -24,7 +24,7 @@ The crime was a **​murder**​ that occurred sometime on ​**Jan.15, 2018**�
 
  ![database_schema](SQL_murder_images/database_schema.png)
 
-#### Read crime report
+#### Read crime report 📝
 
    ```sql
 SELECT *
@@ -37,7 +37,7 @@ AND type ="murder";
 ![report output](SQL_murder_images/report_output.png)
 
 
-#### Gather information from witnesses
+#### Gather information from witnesses 📌
   
    ```sql
 -- One lives on  last house on "Northwestern Dr"
@@ -62,7 +62,7 @@ AND address_street_name = "Franklin Ave";
 ![witness2 output](SQL_murder_images/witness2_output.png)
 
 
-#### Read the police report of each witness
+#### Read the police report of each witness 🔍 
 
    ```sql
 SELECT p.id, p.name, i.transcript
@@ -75,7 +75,7 @@ WHERE p.name IN ("Morty Schapiro", "Annabel Miller")
 ![witness transcript output](SQL_murder_images/witness_transcript_output.png)
 
 
-**New clues**
+**New clues** 📌
 
 | Witness Name     | Observation (clues)                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------|
@@ -102,7 +102,7 @@ c.membership_id LIKE '48Z%'
 ![gym lead output](SQL_murder_images/gym_lead_output.png)
 
 
-#### Car lead
+#### Car lead 🧩 
 
  ```sql
 SELECT p.id, p.name, d.age, d.height,
@@ -118,7 +118,7 @@ AND plate_number LIKE '%H42W%';
 ![car lead output](SQL_murder_images/car_lead_output.png)
 
 
-#### Who paid the killer?
+#### Who paid the killer? 🧩 
  
  ```sql
 
@@ -151,6 +151,8 @@ AND car_model = "Model S"
 ```
 
 ![mastermind output](SQL_murder_images/mastermind_output.png)
+
+🎊🏅⚖️
 
 </details>
 
