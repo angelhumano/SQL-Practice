@@ -27,7 +27,9 @@ The crime was a **​murder**​ that occurred sometime on ​**Jan.15, 2018**�
 SELECT *
 FROM crime_scene_report
 WHERE city = "SQL City" 
-AND date = 20180115;
+AND date = 20180115
+AND type ="murder";
+              
 ```
 
 
@@ -64,12 +66,12 @@ WHERE p.name IN ("Morty Schapiro", "Annabel Miller")
 
 **New clues**
 
-| Witness Name     | Observation                                                                                       |
+| Witness Name     | Observation (clues)                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------|
-| Annabel Miller   | She recognized the killer from her gym when working out last week on January 9th.                |
+| Morty Schapiro  | Car with a plate that included "H42W"               |
 | Morty Schapiro   | Killer had "Get Fit Now Gym" bag                                                                 |
 | Morty Schapiro   | The membership number on the bag started with "48Z"                                               |
-| Morty Schapiro   | Car with a plate that included "H42W"                                                            |
+| Annabel Miller    | She recognized the killer from her gym when working out last week on January 9th.                 |
 
 
 
