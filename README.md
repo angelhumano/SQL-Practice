@@ -87,7 +87,7 @@ WHERE p.name IN ("Morty Schapiro", "Annabel Miller")
 
 We have two leads: the gym and car leads
 
-#### Gym lead
+#### Gym lead 🧩 
 
    ```sql
 SELECT m.name,c.membership_id,m.membership_start_date, c.check_in_date,
@@ -115,10 +115,12 @@ WHERE p.name IN ("Joe Germuska", "Jeremy Bowers")
 AND plate_number LIKE '%H42W%';
 ```
 
+ **Jeremy Bowers is the killer** 🎯 
+
 ![car lead output](SQL_murder_images/car_lead_output.png)
 
 
-#### Who paid the killer? 🧩 
+#### Who paid the killer? 
  
  ```sql
 
@@ -149,10 +151,13 @@ AND hair_color = "red"
 AND car_make = "Tesla"
 AND car_model = "Model S"
 ```
-
 ![mastermind output](SQL_murder_images/mastermind_output.png)
 
-🎊🏅⚖️
+**Miranda Priestly is the mastermind** 
+
+**Case closed** 🎊🏅⚖️
+
+
 
 </details>
 
