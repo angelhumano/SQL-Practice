@@ -20,7 +20,7 @@ The SQL Murder Mystery was created by Joon Park and Cathy He while they were Kni
 The crime was a **​murder**​ that occurred sometime on ​**Jan.15, 2018**​ and that it took place in ​**SQL City**​.
    
 #### Databse schema
- ![database_schema](.png)
+ ![database_schema](SQL_murder_images/database_schema.png)
 
 #### Read crime report
    ```sql
